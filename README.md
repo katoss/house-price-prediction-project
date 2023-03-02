@@ -2,7 +2,7 @@
 In this project I built a linear regression model to predict house prices in Bangalore, and created a web application from it. 
 [__Click here__](http://ec2-54-209-136-199.compute-1.amazonaws.com/) to see the result!
 
-This work is based on an awesome tutorial by [codebasics on YouTube](https://www.youtube.com/playlist?list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg). Definitely check out their channel!
+This work is based on a very instructive end-to-end tutorial by [codebasics on YouTube](https://www.youtube.com/playlist?list=PLeo1K3hjS3uu7clOTtwsp94PcHbzqpAdg). Definitely check out their channel!
 
 ## Technologies used
 * Jupyter Notebook
