@@ -54,8 +54,17 @@ Columns: area_type, availability, location, size (number of bedrooms), society, 
 * Exporting artifacts needed by our server: Export model to __pickle__ file (scores model parameters). Export columns to json file. 
 
 ### Web App
-#### Backend
-Python Flask Server
+#### Backend: Python Flask Server
+* Create client, model, and server directories locally. 
+* Paste artifacts(pickle file, json file) and notebook to model folder.
+* In server directory, create server.py and import __Flask__, create simple application with hello routine to test if it works. Run with python __server.py__, and call localhost with route in server.
+* Create subdirectory and paste pickle and json artifacts. 
+* Create __util.py__ for functions, so that server.py will only do routing of requests and responses.
+* In util.py write routine that returns locations from json file to display them in a dropdown in the UI later, and loads the pickle model. Write function that returns model predictions for model parameters.
+* In server.py create function get_location_names (route /get_location_name) and post function predict_home_price (route /predict_home_price). For predict_home_price, use request module to get user form inputs from UI as model parameters, then run util.get_estimated_price function with these parameters.
+* __Test http calls__ with __Postman__ app. Run app and paste localhost + route to Postman. Test if get_location_names and predict_home_price work (for latter one, add example parameter values to postman form).
+
 #### Frontend 
-UI/Website
+* In client directory, 
+
 #### Deployment
