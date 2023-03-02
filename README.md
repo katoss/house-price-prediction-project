@@ -72,10 +72,10 @@ Columns: area_type, availability, location, size (number of bedrooms), society, 
 * Test on localhost.
 
 #### Deployment
-* Using Nginx web server to server frontend on port 80. Routing api requests to Python Flask server on port 5000 to serve ML model.
+* Using __Nginx__ web server to server frontend on port 80. Routing api requests to Python Flask server on port 5000 to serve ML model.
 * Setting up nginx locally. Adapt conf file to show our html page. Adapt app.js to route to api instead of localhost. Adapt conf to route /api/ to localhost port 5000. 
 * Test: run python server.py, and test UI and function call on nginx.
-* Create amazon EC2 instance (Ubuntu). Download key pair and put in local ssh folder, launch instance.
+* Create amazon __EC2__ instance (Ubuntu). Download key pair and put in local ssh folder, launch instance.
 * Connect to server using ssh and key files. Move files to ubuntu/home with scp.
 * Install nginx on server. Adapt conf file to show our app.html. On server, one cannot directly adapt it, but has to add the info to sites_available folder. Create bhp.conf file with server info, create simlink. 
 * Run nginx to test. Run url to ec2 instance. Shows UI, but backend not working yet.
