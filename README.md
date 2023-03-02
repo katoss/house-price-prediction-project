@@ -65,6 +65,10 @@ Columns: area_type, availability, location, size (number of bedrooms), society, 
 * __Test http calls__ with __Postman__ app. Run app and paste localhost + route to Postman. Test if get_location_names and predict_home_price work (for latter one, add example parameter values to postman form).
 
 #### Frontend 
-* In client directory, 
+* In client directory, create app.html, app.css, and app.js files.
+* Create simple html structure, and css styling.
+* JS: To get location names from backend, specify onPageLoad function --> make http call to /get_location_names. Add locations one by one as options to dropdown.
+* JS: Implement function for clicking on "Estimate price" button. Function OnClickedEstimatePrice(). Write helper functions getBathValue and getBHKValue, which read number from radiobuttions clicked in UI, and parse them to int. Call these in price estimate function, as well as selected value from location dropdown, and estimated price display. Make post function to /predict_home_price route. Change innerHTML of of price display to new estimated price.
+* Test on localhost.
 
 #### Deployment
